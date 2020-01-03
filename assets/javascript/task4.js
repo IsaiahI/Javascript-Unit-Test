@@ -2,6 +2,6 @@
 function phone(){
   var name = document.getElementById("phone").value;
   if(name.length < 5 || name.length > 25){
-    alert("enter a valid name");
+    alert("Not a Valid Phone Number");
   }
 }
