@@ -12,7 +12,7 @@
 	<body>
 		<div class="header">
 			<div class="container">
-				<h1 class="header-heading">Put Student Names Here</h1>
+				<h1 class="header-heading">Rob, Chris, and Isaiah</h1>
 			</div>
 		</div>
 		<div class="nav-bar">
@@ -64,15 +64,23 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onClick = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
+					<img onmouseover = "taskOne()" style = "visibility:visible" src="assets/img/compIcon.png" id="imageTask1"><br />
+					<button style="display:none" id="buttonTask1" onclick = "imageDisappear()">Click Me</button>
 					<hr>
+          
+					<h3>Task 2 - The Table</h3>
+					<!-- Buttons for this task should be entered before the table tag. -->
+					<button type = "button" onClick = "task2()">Red</button>
+					<button type = "button" onClick = "task2A()">Yellow</button>
+					<button type = "button" onClick = "task2B()">Green</button>
+
+					<table class="table table-striped" id = "table1">
 
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
 
-
 					<table class="table table-striped">
+
 						<thead>
 							<tr>
 								<th>#</th>
@@ -129,7 +137,6 @@
 							<td colspan="2"><button type="button" onclick="phone(), length1(), length2(), length3()">Submit</button></td>
 						</tr>
 					</table>
-
 				</div>
 				<div class="aside">
 					<h2>CAUTION</h2>
@@ -140,7 +147,9 @@
 		<div class="footer">
 			<div class="container">
 				Template used for the basis of this project was obtained from "http://maxdesign.com.au/css-layouts/".  This is an example of citing your source!
+			  Parts of code came courtesy of w3schools.com.
 				The not equal to sign was provided by "http://techfunda.com/howto/729/not-equal-operator". This is a cited source!
+        Visibility tag came from w3schools.com
 			</div>
 		</div>
 	</body>
